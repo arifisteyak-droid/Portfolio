@@ -349,7 +349,7 @@ const Portfolio = () => {
               <span className="text-[10px] font-bold uppercase tracking-widest text-green-500 bg-green-50 px-2 py-1 rounded">+112% Growth</span>
             </div>
             <div className="p-6 h-48 bg-slate-50">
-              <ResponsiveContainer width="100%" height="100%">
+              <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                 <AreaChart data={trafficData}>
                   <defs>
                     <linearGradient id="colorTraffic" x1="0" y1="0" x2="0" y2="1">
@@ -443,7 +443,7 @@ const Portfolio = () => {
               <span className="text-[10px] font-bold uppercase tracking-widest text-blue-600 bg-blue-50 px-2 py-1 rounded">DA: 45</span>
             </div>
             <div className="p-6 h-48 bg-slate-50">
-              <ResponsiveContainer width="100%" height="100%">
+              <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                 <BarChart data={backlinkData}>
                   <Bar dataKey="count" fill="#2563eb" radius={[4, 4, 0, 0]} />
                 </BarChart>
@@ -532,7 +532,7 @@ const Portfolio = () => {
               <span className="text-[10px] font-bold uppercase tracking-widest text-blue-600 bg-blue-50 px-2 py-1 rounded">ROAS: 4.8x</span>
             </div>
             <div className="p-6 h-48 bg-slate-50">
-              <ResponsiveContainer width="100%" height="100%">
+              <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                 <BarChart data={adsData}>
                   <Bar dataKey="roi" fill="#2563eb" radius={[4, 4, 0, 0]} />
                 </BarChart>
